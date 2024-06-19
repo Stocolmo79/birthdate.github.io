@@ -62,6 +62,7 @@
 body,
 html {
     font-family: "Happy Monkey", system-ui;
+    background: url('rainbow.png') no-repeat center center fixed;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -132,8 +133,12 @@ html {
 
 @media (max-width: 600px) {
     .floating-image {
-        width: 60px;
+        width: 50px;
         /* Adjust size for smaller screens */
+    }
+    .image{
+        width: 70px;
+        height: 70px;
     }
 
     .center-text {
@@ -156,7 +161,7 @@ html {
     }
 
     .rsvp-form {
-        width: 90%;
+        width: 100%;
         padding: 10px;
     }
 }
