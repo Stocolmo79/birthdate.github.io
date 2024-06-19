@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
-    <title>Interactive Web Page with Floating Images and RSVP</title>
+    <title>Lara fyller 2!!!</title>
     <style>
         /* Reset default margin and padding */
        
@@ -24,21 +24,23 @@
             <h1>Lara fyller 2!</h1>
             <h2>Välkomna på födelsedagsfest!</h2>
             <h3>Den 20 juli kl 15.</3>
-                <h3>Centralvägen 15 Solna, på baksidan!</3>
+                <h3>Centralvägen 15 på baksidan!</3>
         
 
         <div class="rsvp-section">
            <img src="R.gif" alt="" class="image">
             <div class="rsvp-form">
-                <label for="name">Namn:</label>
-                <input type="text" id="name" name="name" required>
+  
+                <input type="text" id="name" name="name" required placeholder="Namn">
 
-                <p>Kommer ni närvara?</p>
-                <input type="radio" id="yes" name="response" value="yes">
-                <label for="yes">Ja</label>
-                <input type="radio" id="no" name="response" value="no">
-                <label for="no">Nej</label>
-
+                <div class="radio-group">
+                    <input type="radio" id="yes" name="response" value="yes">
+                    <label for="yes">Ja! Vi kommer!</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="no" name="response" value="no">
+                    <label for="no">Nej, vi kan tyvärr inte!</label>
+                </div>
                 <button onclick="sendRSVP()">Send</button>
             </div>
         </div>
