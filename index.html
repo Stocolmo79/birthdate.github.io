@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+    <title>Interactive Web Page with Floating Images and RSVP</title>
+    <style>
+        /* Reset default margin and padding */
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="melody.png" alt="Image 1" class="floating-image" style="top: 10%; left: 10%;">
+        <img src="pngegg.png" alt="Image 2" class="floating-image" style="top: 30%; left: 40%;">
+        <img src="melody.png" alt="Image 3" class="floating-image" style="top: 50%; left: 70%;">
+        <div class="center-text">
+            <h1>Lara fyller 2!</h1>
+            <h2>Välkomna på födelsedagsfest!</h2>
+            <h3>Den 20 juli kl 15.</3>
+                <h3>Centralvägen 15 på baksidan!</3>
+           <img src="R.gif" alt="" class="image">
+        </div>
+
+        <div class="rsvp-section">
+          
+            <div class="rsvp-form">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <p>Kommer ni närvara?</p>
+                <input type="radio" id="yes" name="response" value="yes">
+                <label for="yes">Ja</label>
+                <input type="radio" id="no" name="response" value="no">
+                <label for="no">Nej</label>
+
+                <button onclick="sendRSVP()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
