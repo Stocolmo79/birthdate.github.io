@@ -125,3 +125,24 @@ body, html {
 .image{
     border-radius: 10%;
 }
+@media (max-width: 600px) {
+    .floating-image {
+        width: 60px; /* Adjust size for smaller screens */
+    }
+
+    .center-text h1 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+
+    .center-text h2 {
+        font-size: 20px; /* Smaller font size for smaller screens */
+    }
+
+    .center-text h3 {
+        font-size: 16px; /* Smaller font size for smaller screens */
+    }
+
+    .rsvp-form {
+        width: 90%;
+    }
+}
