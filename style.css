@@ -1,19 +1,19 @@
-
-
-
 .floating-image {
     position: absolute;
-    width: 100px; /* Adjust size as needed */
+    width: 100px;
+    /* Adjust size as needed */
     height: auto;
     display: block;
-    z-index: 1000; /* Ensure it's above other content */
-    pointer-events: none; /* Prevents images from blocking mouse events */
+    z-index: 1000;
+    /* Ensure it's above other content */
+    pointer-events: none;
+    /* Prevents images from blocking mouse events */
 }
 
 
 
 
-.rsvp-form input[type="text"], 
+.rsvp-form input[type="text"],
 .rsvp-form input[type="radio"] {
     margin: 8px 0;
     padding: 8px;
@@ -43,7 +43,8 @@
 .rsvp-form button:hover {
     background-color: #45a049;
 }
-       .text-section {
+
+.text-section {
     margin-top: 20px;
 }
 
@@ -53,10 +54,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px;
+    /* Adjust the font size as needed */
     z-index: 1;
 }
-body, html {
+
+body,
+html {
     font-family: "Happy Monkey", system-ui;
     margin: 0;
     padding: 0;
@@ -70,7 +74,8 @@ body, html {
 }
 
 .container {
-    position: absolute;
+    position: relative;
+    margin: 0 auto;
     width: 100%;
     height: 100%;
     display: flex;
@@ -81,7 +86,7 @@ body, html {
 
 .rsvp-section {
     position: absolute;
- top: 180%;
+    top: 180%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -99,42 +104,59 @@ body, html {
     align-items: center;
 }
 
-.rsvp-section label, .rsvp-section input {
+.rsvp-section label,
+.rsvp-section input {
     margin: 5px;
 }
 
 .falling-image {
     position: absolute;
     top: -100px;
-    width: 50px; /* Adjust the width as needed */
-    height: 50px; /* Adjust the height as needed */
+    width: 50px;
+    /* Adjust the width as needed */
+    height: 50px;
+    /* Adjust the height as needed */
     transition: transform 0.5s ease, top 0.5s ease;
     cursor: pointer;
 }
-
-.image{
-    border-radius: 10%;
+.radio-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
+.image {
+    border-radius: 10%;
+    height: 200px;
+}
+
 @media (max-width: 600px) {
     .floating-image {
-        width: 60px; /* Adjust size for smaller screens */
+        width: 60px;
+        /* Adjust size for smaller screens */
     }
-    .center-text{
-        top: 30%;
+
+    .center-text {
+        top: 20%;
     }
+
     .center-text h1 {
-        font-size: 24px; /* Smaller font size for smaller screens */
+        font-size: 24px;
+        /* Smaller font size for smaller screens */
     }
 
     .center-text h2 {
-        font-size: 20px; /* Smaller font size for smaller screens */
+        font-size: 20px;
+        /* Smaller font size for smaller screens */
     }
 
     .center-text h3 {
-        font-size: 16px; /* Smaller font size for smaller screens */
+        font-size: 16px;
+        /* Smaller font size for smaller screens */
     }
 
     .rsvp-form {
         width: 90%;
+        padding: 10px;
     }
 }
