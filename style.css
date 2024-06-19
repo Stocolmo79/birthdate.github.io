@@ -155,3 +155,13 @@ body, html {
 .image{
     border-radius: 10%;
 }
+/* Responsive styles */
+@media (max-width: 600px) {
+    .floating-image {
+        width: 60px; /* Adjust size for smaller screens */
+    }
+
+    .rsvp-form {
+        width: 90%;
+    }
+}
