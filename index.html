@@ -4,44 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
-    <title>Lara fyller 2!!!</title>
-   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+    <title data-translate="page-title">Lara fyller 2!!!</title>
 </head>
 <body>
+    <div class="language-switcher">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('es')">Español</button>
+        <button onclick="setLanguage('sv')">Svenska</button>
+    </div>
     <div class="container">
         <img src="melody.png" alt="Image 1" class="floating-image" style="top: 10%; left: 10%;">
         <img src="pngegg.png" alt="Image 2" class="floating-image" style="top: 30%; left: 40%;">
-        <img src="melody-unicorn.png" alt="Image 3" class="floating-image" style="top: 50%; left: 70%;">
+        <img src="melody.png" alt="Image 3" class="floating-image" style="top: 50%; left: 70%;">
         <div class="center-text">
-            <h1>Lara fyller 2!</h1>
-            <h2>Välkomna på födelsedagsfest!</h2>
-            <h3>Den 20 juli kl 15.</3>
-                <h3>Centralvägen 15 på baksidan!</3>
-        
-
+            <h1 data-translate="title">Lara fyller 2!</h1>
+            <h2 data-translate="welcome">Välkomna på födelsedagsfest!</h2>
+            <h3 data-translate="date">Den 20 juli kl 15.</h3>
+            <h3 data-translate="address">Centralvägen 15 på baksidan!</h3>
+        </div>
         <div class="rsvp-section">
-           <img src="R.gif" alt="" class="image">
+            <img src="R.gif" alt="" class="image">
             <div class="rsvp-form">
-  
-                <input type="text" id="name" name="name" required placeholder="Namn">
-
+                <input type="text" id="name" name="name" required placeholder="Namn" data-translate-placeholder="name-placeholder">
                 <div class="radio-group">
                     <input type="radio" id="yes" name="response" value="yes">
-                    <label for="yes">Ja! Vi kommer!</label>
+                    <label for="yes" data-translate="yes">Ja! Vi kommer!</label>
                 </div>
                 <div class="radio-group">
                     <input type="radio" id="no" name="response" value="no">
-                    <label for="no">Nej, vi kan tyvärr inte!</label>
+                    <label for="no" data-translate="no">Nej, vi kan tyvärr inte!</label>
                 </div>
-                <button onclick="sendRSVP()">Send</button>
+                <button onclick="sendRSVP()" data-translate="send">Send</button>
             </div>
         </div>
-    </div> </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
