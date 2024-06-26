@@ -14,102 +14,76 @@ html {
     background-color: lightpink;
 }
 
-/* General styles for language switcher container */
 .language-switcher {
-    position: fixed; /* Make it positioned relative to the viewport */
-    top: 1rem; /* Adjust top position for desired placement */
-    left: 1rem; /* Adjust left position for desired placement */
-    display: flex;
-    justify-content: space-around;
-    z-index: 2; /* Set a higher z-index to bring it on top (optional) */
-    margin-bottom: 1rem; /* Add some margin for spacing */
+  position: fixed; /* Make it positioned relative to the viewport */
+  top: 1rem; /* Adjust top position for desired placement */
+  left: 1rem; /* Adjust left position for desired placement */
+  display: flex;
+  justify-content: space-around;
+  z-index: 10000; /* Set a higher z-index to bring it on top (optional) */
+  width: auto;
+}
+
+/* Hide buttons by default on small screens */
+.language-switcher button {
+  display: none;
+}
+
+/* Hamburger menu button styles */
+.language-switcher .menu-button {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem; /* Adjust padding for desired button size */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center icon vertically */
+}
+
+/* Styles for large screens */
+@media (min-width: 768px) {
+  .language-switcher {
+      display: flex; /* Make buttons inline on large screens */
   }
-  
-  /* Hide buttons by default on small screens */
+
+  /* Show buttons and hide menu button on large screens */
   .language-switcher button {
-    display: none;
+      display: block;
   }
-  
-  /* Hamburger menu button styles */
+
   .language-switcher .menu-button {
-    background-color: transparent;
-    border: none;
-    padding: 0.5rem 1rem; /* Adjust padding for desired button size */
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center icon vertically */
-  }
-  
-  .language-switcher .menu-button::before {
-    content: "\2630"; /* Hamburger menu icon character */
-    font-size: 1.5rem; /* Adjust icon size */
-  }
-  
-  /* Styles for large screens */
-  @media (min-width: 768px) {
-    .language-switcher {
-      display: inline-flex; /* Make buttons inline on large screens */
-    }
-    
-    /* Show buttons and hide menu button on large screens */
-    .language-switcher button {
-      display: block;
-    }
-    
-    .language-switcher .menu-button {
       display: none;
-    }
   }
-  
-  /* Styles for small screens */
-  @media (max-width: 767px) {
-    .language-switcher {
-      display: block; /* Stack menu button on top on small screens */
-    }
-    
-    .language-switcher .menu-button {
+
+  #languageLinks {
+      display: flex;
+  }
+
+  #languageLinks button {
       display: block;
-    }
   }
-  
-  /* Additional styles for menu opening/closing (optional) */
-  .language-switcher.open button {
-    display: block; /* Show buttons when menu is open */
-  }
-  
-  /* Styles for large screens */
-  @media (min-width: 768px) {
-    .language-switcher {
-      display: inline-flex; /* Make buttons inline on large screens */
-    }
-    
-    /* Show buttons and hide menu button on large screens */
-    .language-switcher button {
+}
+
+/* Styles for small screens */
+@media (max-width: 767px) {
+  .language-switcher .menu-button {
       display: block;
-    }
-    
-    .language-switcher .menu-button {
+  }
+
+  #languageLinks {
       display: none;
-    }
+      flex-direction: column;
   }
-  
-  /* Styles for small screens */
-  @media (max-width: 767px) {
-    .language-switcher {
-      display: block; /* Stack menu button on top on small screens */
-    }
-    
-    .language-switcher .menu-button {
+
+  .language-switcher.responsive #languageLinks {
+      display: flex;
+  }
+
+  .language-switcher button {
       display: block;
-    }
   }
-  
-  /* Additional styles for menu opening/closing (optional) */
-  .language-switcher.open button {
-    display: block; /* Show buttons when menu is open */
-  }
-  
+}
+
 
 .container {
     position: relative;
@@ -202,7 +176,7 @@ html {
 
 .rsvp-section {
     position: absolute;
-    top: 180%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
