@@ -10,12 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
     <title data-translate="page-title">Lara fyller 2!!!</title>
 </head>
-<body>
-    <div class="language-switcher">
+<body>   <nav class="language-switcher">
+    <button class="menu-button" onclick="toggleMenu()">&#9776;</button>
+    <div id="languageLinks">
+        <a onclick="setLanguage('en')">English</a>
+        <a onclick="setLanguage('es')">Español</a>
+        <a onclick="setLanguage('sv')">Svenska</a>
+    </div>
+</nav>
+    <!-- <div class="language-switcher">
         <button onclick="setLanguage('en')">English</button>
         <button onclick="setLanguage('es')">Español</button>
         <button onclick="setLanguage('sv')">Svenska</button>
-    </div>
+    </div> -->
     <div class="container">
         <img src="melody.png" alt="Image 1" class="floating-image" style="top: 10%; left: 10%;">
         <img src="pngegg.png" alt="Image 2" class="floating-image" style="top: 30%; left: 40%;">
@@ -25,6 +32,7 @@
             <h2 data-translate="welcome">Välkomna på födelsedagsfest!</h2>
             <h3 data-translate="date">Den 20 juli kl 15.</h3>
             <h3 data-translate="address">Centralvägen 15 på baksidan!</h3>
+            <p data-translate="clothes">Ta med badkläder till barnen!</p>
         </div>
         <div class="rsvp-section">
             <img src="R.gif" alt="" class="image">
