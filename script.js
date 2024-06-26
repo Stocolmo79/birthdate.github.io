@@ -10,7 +10,8 @@ const translations = {
         title: "Lara turns 2!",
         welcome: "Welcome to the birthday party!",
         date: "July 20 at 3 PM.",
-        address: "Centralvägen 15 at the back!",
+        address: "Centralvägen 15 at the back! ",
+          clothes: "Bring swimsuit for the kids!",
         "name-placeholder": "Name",
         yes: "Yes! We are coming!",
         no: "No, we cannot make it!",
@@ -22,6 +23,8 @@ const translations = {
         welcome: "¡Bienvenidos a la fiesta de cumpleaños!",
         date: "20 de julio a las 3 PM.",
         address: "Centralvägen 15 en la parte trasera!",
+        clothes: "¡Traiga traje de baño para los niños!",
+
         "name-placeholder": "Nombre",
         yes: "¡Sí! ¡Vamos a venir!",
         no: "No, no podemos asistir.",
@@ -32,7 +35,8 @@ const translations = {
         title: "Lara fyller 2!",
         welcome: "Välkomna på födelsedagsfest!",
         date: "Den 20 juli kl 15.",
-        address: "Centralvägen 15 på baksidan!",
+        address: "Centralvägen 15 på baksidan! ",
+        clothes: "Ta med badkläder till barnen!",
         "name-placeholder": "Namn",
         yes: "Ja! Vi kommer!",
         no: "Nej, vi kan tyvärr inte!",
@@ -61,6 +65,15 @@ function setLanguage(language) {
         }
     });
 }
+function toggleMenu() {
+    const menu = document.getElementById('languageLinks');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+}
+
 
 // Function to animate the images bouncing like balls
 function animateImages() {
@@ -119,3 +132,4 @@ document.addEventListener('DOMContentLoaded', () => {
 window.onload = function() {
     animateImages();
 };
+
