@@ -6,10 +6,10 @@ function random(min, max) {
 })();
 const translations = {
     en: {
-        "page-title": "Lara turns 2!",
-        title: "Lara turns 2!",
+        "page-title": "Lara turns 3!",
+        title: "Lara turns 3!",
         welcome: "Welcome to the birthday party!",
-        date: "July 20 at 3 PM.",
+        date: "August 16 at 3 PM.",
         address: "Centralvägen 15 at the back! ",
           clothes: "Bring swimsuit for the kids!",
         "name-placeholder": "Name",
@@ -18,10 +18,10 @@ const translations = {
         send: "Send"
     },
     es: {
-        "page-title": "¡Lara cumple 2!!!",
-        title: "¡Lara cumple 2!",
+        "page-title": "¡Lara cumple 3!!!",
+        title: "¡Lara cumple 3!",
         welcome: "¡Bienvenidos a la fiesta de cumpleaños!",
-        date: "20 de julio a las 3 PM.",
+        date: "16 de agosto a las 3 PM.",
         address: "Centralvägen 15 en la parte trasera!",
         clothes: "¡Traiga traje de baño para los niños!",
 
@@ -31,10 +31,10 @@ const translations = {
         send: "Enviar"
     },
     sv: {
-        "page-title": "Lara fyller 2!!!",
-        title: "Lara fyller 2!",
+        "page-title": "Lara fyller 3!!!",
+        title: "Lara fyller 3!",
         welcome: "Välkomna på födelsedagsfest!",
-        date: "Den 20 juli kl 15.",
+        date: "Den 16 augusti kl 15.",
         address: "Centralvägen 15 på baksidan! ",
         clothes: "Ta med badkläder till barnen!",
         "name-placeholder": "Namn",
